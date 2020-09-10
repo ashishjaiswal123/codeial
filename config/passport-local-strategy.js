@@ -23,3 +23,23 @@ passport.use(new LocalStrategy({
         });
     }
 ));
+
+
+//serializing the user to decide which key is to be kept in the cookies
+passport.serializeUser(function(user,done){
+    done(null,user.id);
+
+});
+
+//deserializing the user from the key in the cookies
+passport.deserializeUser(function(id,done){
+    User.findById(function(err,user){
+        if(err){
+            console.log('error in finding user'); 
+            return done(err);
+        }
+        return done(null,user);
+    });
+});
+
+module.exports = passport;
