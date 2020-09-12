@@ -1,0 +1,46 @@
+.sign-up-pg {
+  height: 90vh;
+  width: 100vw;
+  background-color: #d54c20fa;
+  background-image: url("/images/sign_up_pg_img.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative; }
+  .sign-up-pg form {
+    position: absolute;
+    right: 10%;
+    top: 10%;
+    background-color: white;
+    border-radius: 4px;
+    width: 30%; }
+    .sign-up-pg form h2 {
+      color: black;
+      border-bottom: 2px solid #D7D7D7;
+      font-family: Impact, Charcoal, sans-serif;
+      word-spacing: 4px;
+      margin-left: 2rem;
+      margin-right: 2rem;
+      border-left: 2px solid #D7D7D7;
+      padding: 6px; }
+    .sign-up-pg form h2:hover {
+      color: #d54c20fa; }
+    .sign-up-pg form input {
+      margin-left: 2rem;
+      margin-bottom: 0.8rem;
+      margin-right: 2rem;
+      width: 70%;
+      height: 2.4rem;
+      border: 2px solid #E5E5E5;
+      padding-left: 10px;
+      border-radius: 4px;
+      outline: none; }
+    .sign-up-pg form div {
+      border-bottom: 2px solid #D7D7D7;
+      margin-bottom: 1rem;
+      margin-left: 2rem;
+      margin-right: 2rem; }
+
+#submit {
+  width: 20%;
+  background-color: #d54c20fa;
+  margin-bottom: 2rem; }

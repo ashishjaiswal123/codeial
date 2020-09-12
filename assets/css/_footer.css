@@ -1,0 +1,56 @@
+#footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+  box-shadow: inset 1px 4px 7px 2px grey;
+  padding-top: 2rem;
+  width: 100vw;
+  height: auto;
+  padding-bottom: 4rem; }
+
+.about-codeial {
+  width: 25%;
+  margin-left: 10%; }
+  .about-codeial div img {
+    width: 3rem;
+    display: inline-block;
+    margin-right: 10px; }
+  .about-codeial div span {
+    display: inline-block; }
+    .about-codeial div span span {
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: black; }
+    .about-codeial div span div {
+      font-size: 0.8rem;
+      color: grey; }
+  .about-codeial span {
+    font-size: 0.8rem;
+    color: grey; }
+  .about-codeial ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    margin-top: 10px; }
+    .about-codeial ul li {
+      display: inline-block;
+      padding-right: 12px; }
+      .about-codeial ul li a i {
+        color: grey;
+        font-size: 1rem; }
+
+.about-website {
+  margin-right: 10%;
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; }
+  .about-website ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    color: grey; }
+    .about-website ul li {
+      margin-bottom: 1rem; }
+    .about-website ul li:hover {
+      color: orangered; }

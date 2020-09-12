@@ -1,18 +1,35 @@
+<link rel="stylesheet" href="/css/_header.css">
 <header>
-    page header
-
+    <span>
+    <img src="/images/icon.svg" alt="website icon">
+    <span>Codeial</span>
+    </span>
     <ul>
         <% if(locals.user){%>
             <li>
                 <a href="/users/profile"><%=user.name%></a>
             </li>
-            <li><a href="/users/sign-out">Sign Out</a></li>
-        <%}else{%>
             <li>
-                <a href="/users/sign-in">Sign In</a>
+                <button><a href="/">Home</a></button> 
+             </li>
+            <li>
+               <button><a href="">About US</a></button> 
             </li>
             <li>
-                <a href="/users/sign-up">Sign Up</a>
+                <button><a href="/users/sign-out">Sign Out</a></button>
+            </li>
+        <%}else{%>
+            <li>
+               <button><a href="/">Home</a></button> 
+            </li>
+            <li>
+                <button><a href="">About US</a></button>
+            </li>
+            <li>
+                <button><a href="/users/sign-in">Sign In</a></button>
+            </li>
+            <li>
+                <button><a href="/users/sign-up">Sign Up</a></button>
             </li>
         <%}%>
     </ul>
