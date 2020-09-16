@@ -1,7 +1,82 @@
-.home{
+// .home{
     // background-color: #FF6C3D;
-    background-color: #d54c20fa;
-    height: 20vh;
-    width: 100vw;
-    padding-top: 13vh;
+//     background-color: #d54c20fa;
+//     height: 60px;
+// }
+
+#home-container{
+    display: flex;
+    #left-box{
+        padding: 10px;
+        width: 25%;
+        border-right: 2px solid lightgrey;
+        background-color: lightblue;
+        box-shadow: 2px 2px 3px;
+        div{
+            margin-left: 20%;
+        }
+    }
+    #feed-posts{
+        width: 40%;
+        overflow: hidden;
+        box-shadow: -2px 1px 3px;
+        h2{
+            width: 97%;
+            border-bottom: 2px solid lightgrey;
+            padding: 10px;
+        }
+        form{
+            padding: 10px;
+            border-bottom: 8px solid #E6ECF0;
+            textarea{
+                width: 100%;
+                background-color: #F0F2F5;
+                padding: 10px;
+                border:none;
+                height: 4rem;
+                outline: none;
+                border-radius: 4px;
+            }
+            textarea:hover{
+                background-color: #E4E6E9;
+            }
+            input{
+                margin-top: 5px;
+                // height: 2rem;
+                // width: 5.4rem;
+                border: none;
+                border-radius: 4px;
+                // background-color: coral;
+                outline: none;
+            }
+            input:hover{
+                background-color: lightblue;
+            }
+        }
+    }
+    #user-friends{
+        width: 20%;
+        padding: 10px;
+        padding-left: 3%;
+        border-left: 2px solid lightgrey;
+        // background-color:  #e26238fa;
+        #friends{
+            width: 80%;
+            background-color: #F5F8FA;
+            border-radius: 15px;
+            padding: 15px;
+            h2{
+                border-bottom: 2px solid lightgrey;
+            }
+            p a{
+                color: black;
+                text-decoration: none;
+            }
+        }
+    }
 }
+
+// #user-friends{
+//   background-color:  #e26238fa;
+  
+// }

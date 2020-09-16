@@ -1,0 +1,27 @@
+li{
+    list-style: square;
+    #post-detail{
+        span{
+            font-weight: bold;
+            margin-right: 80%;
+        }
+    }
+    .comment-box{
+        border-bottom: 2px solid lightgrey;
+        width: 100%;
+        .type-here{
+            background-color: #F0F2F5;
+            width: 60%;
+            height: 2rem;
+            padding-left: 10px;
+            border-radius: 4px;
+        }
+        .btn{
+            height: 2rem;
+        }
+        
+    }
+    
+}
+
+

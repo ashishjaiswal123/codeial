@@ -1,14 +1,15 @@
-<li>
-    <p>
-           <% if(locals.user && locals.user.id == comment.user.id){ %>
-              <small>
-                 <a href="/comments/destroy/<%=comment.id%>">X</a>
-              </small>
-            <% } %>
+<link rel="stylesheet" href="/css/_comment.css">
 
-          <%= comment.content %> <br>
-           <small>
-           <%= comment.user.name %>
-           </small>
+<li class="comment-list">
+    <p>
+       <div><%= comment.content %> </div>
+       <small>
+           <span style="margin-right: 80%;"><%= comment.user.name %></span>
+           <% if(locals.user && locals.user.id == comment.user.id){ %>
+            <small>
+               <a href="/comments/destroy/<%=comment.id%>">X</a>
+            </small>
+          <% } %> 
+       </small>
     </p>
 </li>

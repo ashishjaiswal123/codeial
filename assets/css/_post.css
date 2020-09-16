@@ -1,0 +1,16 @@
+li {
+  list-style: square; }
+  li #post-detail span {
+    font-weight: bold;
+    margin-right: 80%; }
+  li .comment-box {
+    border-bottom: 2px solid lightgrey;
+    width: 100%; }
+    li .comment-box .type-here {
+      background-color: #F0F2F5;
+      width: 60%;
+      height: 2rem;
+      padding-left: 10px;
+      border-radius: 4px; }
+    li .comment-box .btn {
+      height: 2rem; }

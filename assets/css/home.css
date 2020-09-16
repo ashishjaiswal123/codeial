@@ -1,5 +1,53 @@
-.home {
-  background-color: #d54c20fa;
-  height: 20vh;
-  width: 100vw;
-  padding-top: 13vh; }
+#home-container {
+  display: flex; }
+  #home-container #left-box {
+    padding: 10px;
+    width: 25%;
+    border-right: 2px solid lightgrey;
+    background-color: lightblue;
+    box-shadow: 2px 2px 3px; }
+    #home-container #left-box div {
+      margin-left: 20%; }
+  #home-container #feed-posts {
+    width: 40%;
+    overflow: hidden;
+    box-shadow: -2px 1px 3px; }
+    #home-container #feed-posts h2 {
+      width: 97%;
+      border-bottom: 2px solid lightgrey;
+      padding: 10px; }
+    #home-container #feed-posts form {
+      padding: 10px;
+      border-bottom: 8px solid #E6ECF0; }
+      #home-container #feed-posts form textarea {
+        width: 100%;
+        background-color: #F0F2F5;
+        padding: 10px;
+        border: none;
+        height: 4rem;
+        outline: none;
+        border-radius: 4px; }
+      #home-container #feed-posts form textarea:hover {
+        background-color: #E4E6E9; }
+      #home-container #feed-posts form input {
+        margin-top: 5px;
+        border: none;
+        border-radius: 4px;
+        outline: none; }
+      #home-container #feed-posts form input:hover {
+        background-color: lightblue; }
+  #home-container #user-friends {
+    width: 20%;
+    padding: 10px;
+    padding-left: 3%;
+    border-left: 2px solid lightgrey; }
+    #home-container #user-friends #friends {
+      width: 80%;
+      background-color: #F5F8FA;
+      border-radius: 15px;
+      padding: 15px; }
+      #home-container #user-friends #friends h2 {
+        border-bottom: 2px solid lightgrey; }
+      #home-container #user-friends #friends p a {
+        color: black;
+        text-decoration: none; }
