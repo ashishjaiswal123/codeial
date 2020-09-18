@@ -1,6 +1,7 @@
 <link rel="stylesheet" href="/css/_post.css">
 
 <li id="post-<%=post._id%>">
+       
     <section id="post-detail">
        <span><%= post.user.name %> </span>
        <% if(locals.user && locals.user.id == post.user.id){ %>

@@ -27,16 +27,33 @@ module.exports.create = async function(req,res){
 }
 
 module.exports.destroy = async function(req,res){
+
+    try{
+        let post = await Post.findById(req.params.id);
+        if(post.user == req.user.id){
+            post.remove();
     
-    let post = await Post.findById(req.params.id);
-    if(post.user == req.user.id){
-        post.remove();
-        await Comment.deleteMany({post: req.params.id});
-        req.flash('success','Post Deleted!!!');
-        return res.redirect('back');
-    }else{
-        req.flash('error', 'error in deleting post');
-        return res.redirect('back');
-       
+            await Comment.deleteMany({post: req.params.id});
+    
+            if(req.xhr){
+                return res.status(200).json({
+                    data : {
+                        post_id : req.params.id
+                    },
+                    message : 'post deleted!'
+                });
+            }
+    
+            req.flash('success','Post Deleted!!!');
+            return res.redirect('back');
+        }else{
+            req.flash('error', 'error in deleting post');
+            return res.redirect('back');
+           
+        }
+    }catch(error){
+            console.log('error',error);
     }
+    
+    
 }
